@@ -10,7 +10,7 @@ export default function RootLayout({
 }>) {
   return (
     <div className="flex flex-col">
-      <nav className="flex justify-between items-center gap-8 py-4 px-12">
+      <nav className="justify-between items-center gap-8 py-4 px-12 border border-b hidden md:flex">
         <h1 className="text-xl font-bold">Motocross Manager</h1>
         <NavigationMenu>
           <NavigationMenuList>
@@ -28,6 +28,7 @@ export default function RootLayout({
           <DownloadGameButton />
         </div>
       </nav>
+      
       {children}
     </div>
   );
